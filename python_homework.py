@@ -42,11 +42,11 @@ print(max_num_in_list([4, 2, 14, -5, 10]))     # output will be 14
 
 def is_leap_year(a_year):
         if a_year % 4 == 0:
-            return True
-            if a_year % 100 == 0:
+                return True
+        if a_year % 400 == 0:
                 return False
-                if a_year % 400 == 0:
-                    return True
+        if a_year % 100 == 0:
+                return True
         else:
             return False
         
@@ -60,7 +60,7 @@ print(is_leap_year(a_year))
 # def is_consecutive(a_list):
 
 # this one was a struggle for me >_< but I did my best with all the resources available to me
-# plus everything I've picked up thus far:
+# plus everything I've picked up thus far and used python tutor to help me execute:
 
 def is_consecutive(a_list):   # function takes list 'a_list' as input
     int = len(a_list)         # find out the length of the list and assign it to variable 'int' (integer)
@@ -76,14 +76,3 @@ list1 = [6, 7, 8, 9, 10]
 list2 = [6, 8, 6, 10, 12]
 print(is_consecutive(list1)) # True
 print(is_consecutive(list2)) # False
-
-
-
-
-
-
-
-
-
-
-    
